@@ -1,5 +1,4 @@
 # JAV_limdal_lundgren
-Version: 2.0.1
 
 Welcome to Farming Game, a text-mode game about farming written in Java!
 
@@ -38,13 +37,9 @@ java -cp out Main
 **Windows (Command Prompt)**
 
 ```
-dir /s /b src\*.java > sources.txt
-javac -d out @sources.txt
+javac -d out src\Main.java src\crops\*.java src\farm\*.java src\game\*.java src\market\*.java src\player\*.java
 java -cp out Main
 ```
-
-(The Command Prompt version does not work if the project path contains
-spaces: use PowerShell in that case.)
 
 To generate the HTML documentation in a `doc` folder:
 
